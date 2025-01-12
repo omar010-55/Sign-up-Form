@@ -135,6 +135,11 @@ input {
   font-size: 15px;
 }
 
+input:hover,
+input:focus {
+  background-color: rgba(0, 0, 0, 0.014);
+}
+
 input:focus {
   border:1px solid blue;
   box-shadow: 2px 2px 5px #10101042;
@@ -165,6 +170,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: rgb(77 96 61);
+}
+
 p:last-child {
   bottom: -130px;
   font-size: 15px;
@@ -176,6 +185,15 @@ p:last-child a {
   text-decoration: none;
 }
 
+p:last-child a:hover {
+  text-decoration: underline;
+}
+
 .right-columns > * {
   padding-left: 50px;
+}
+::placeholder {
+  font-size: 12px;
+  opacity: .6;
+  letter-spacing: 1px;
 }
